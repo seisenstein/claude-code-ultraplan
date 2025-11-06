@@ -193,7 +193,11 @@ MIT License - Use freely, modify as needed, share improvements back.
 
 ## Version
 
-**v1.0.0** - Initial public release
+**v2.0.0** - Dual-mode universal planning (Current)
+- Code Implementation Mode + General Task Planning Mode
+- See [ULTRAPLAN_CHANGELOG.md](ULTRAPLAN_CHANGELOG.md) for detailed version comparison
+- See [v1.0.0-original.md](v1.0.0-original.md) for code-only version
+
 Last updated: 2025-11-05
 
 ## Support

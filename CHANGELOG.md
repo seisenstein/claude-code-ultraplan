@@ -5,43 +5,68 @@ All notable changes to the Claude Code Ultraplan project will be documented in t
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+> 📖 **See [ULTRAPLAN_CHANGELOG.md](ULTRAPLAN_CHANGELOG.md) for comprehensive version comparison and upgrade guide.**
+
+## [2.0.0] - 2025-11-05
+
+### Added
+- **Dual-mode operation** - Code Implementation Mode + General Task Planning Mode (MAJOR FEATURE)
+- Mode selection system using AskUserQuestion tool
+- General Task Planning Mode for non-code tasks (workflows, research, projects, content, resources, learning)
+- Mode-specific output locations (`/Scrapbook/` for code, `~/Documents/Plans/` for general)
+- General mode deliverables: `resources_list.md` and `alternatives_analysis.md`
+- Mode-aware documentation structures throughout all 4 phases
+- YAML frontmatter with slash command metadata
+- Section 7 "Context for Executor" in implementation plans
+- Comprehensive version history documentation ([ULTRAPLAN_CHANGELOG.md](ULTRAPLAN_CHANGELOG.md))
+- Original v1.0.0 archived in `v1.0.0-original.md`
+
+### Changed
+- **BREAKING**: Now requires mode selection at invocation (but Code mode maintains v1.0.0 compatibility)
+- Task classification now branches by mode (code vs. general task types)
+- Complexity classification made universal (works for both code and non-code tasks)
+- Investigation phase explicitly branches based on selected mode
+- Requirements inventory expanded with mode-specific elements
+- Plan structure adapts to mode context
+- Success criteria now universal with mode-aware guidance
+
+### Enhanced
+- More detailed specifications for both code and general tasks
+- Clearer investigation execution instructions
+- Expanded risk management strategies
+- Better context preservation for executors
+
 ## [1.0.0] - 2025-11-05
 
 ### Added
-- Initial public release of Universal Implementation Plan Generator
-- Dual-mode operation (Code Implementation + General Task Planning)
+- Initial private release of Universal Implementation Plan Generator (code-only)
 - Four-phase planning protocol (Classification, Investigation, Documentation, Plan Creation)
 - Complexity-aware scaling (1-2 agents for simple tasks, 5+ for complex)
 - Zero-assumption investigation methodology
 - Persistent markdown documentation for cross-session handoffs
-- Six core deliverable files (investigation findings, implementation plan, dependencies map, validation checklist, testing strategy, rollback plan)
+- Four core deliverable files (investigation findings, implementation plan, dependencies map, testing checklist)
+- Code-specific files (testing_strategy.md, rollback_plan.md)
 - Token economics model (upfront investment, long-term recovery)
 - Session-independent execution capabilities
-- Comprehensive documentation (README, INSTALL, USAGE, CONTRIBUTING, EXAMPLES)
-- Self-installation instructions for Claude Code
-- MIT license for open source use
-
-### Documentation
-- Complete installation guide with platform-specific instructions
-- Detailed usage guide with examples for both modes
-- Contributing guidelines with testing requirements
-- Real-world examples showing output structure
-- Quick start guide for immediate use
 
 ### Features
-- **Code Implementation Mode**: Bug fixes, features, refactoring, API integrations, infrastructure, testing
-- **General Task Planning Mode**: Workflows, research, projects, content, resources, learning
-- **Complexity Classification**: Auto-determines Low/Medium/High complexity
-- **Scaled Investigation**: Launches appropriate number of parallel subagents
+- **Code Implementation Only**: Bug fixes, features, refactoring, API integrations, infrastructure
+- Task types: New Feature, Bug Fix, Refactoring, Integration, Infrastructure
+- **Complexity Classification**: Low/Medium/High based on files affected
+- **Scaled Investigation**: Launches appropriate number of parallel subagents for code analysis
 - **Gap Analysis**: Re-investigates until zero assumptions remain
-- **Validation Framework**: Checkpoints and rollback procedures at each phase
-- **Risk Management**: Safe stopping points and rollback strategies
-- **Context Preservation**: Complete state saved for future sessions
+- **Validation Framework**: Testing checkpoints and rollback procedures
+- **Context Preservation**: Complete state saved in `/Scrapbook/` for future sessions
+
+### Limitations
+- **Code tasks only** - Could not plan non-development tasks
+- Single output location (`/Scrapbook/` only)
+- No mode selection (assumed all tasks were code-related)
 
 ### Origin
 - Created as part of LIMITED EDITION JONATHAN's Collaborative Prompt Engineering #001 initiative
-- Based on production testing across multiple real-world projects
-- Community-driven evolution framework established
+- Based on production testing across code implementation projects
+- Foundation for v2.0.0 universal planning expansion
 
 ## [Unreleased]
 
@@ -57,16 +82,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History
 
-**v1.0.0** - Initial public release (2025-11-05)
+| Version | Date | Description | Status |
+|---------|------|-------------|--------|
+| **v2.0.0** | 2025-11-05 | Dual-mode universal planning (current) | ✅ Active |
+| v1.0.0 | 2025-11-05 | Original code-only version | 📦 Archived |
 
-## How to Upgrade
+**Current Version**: v2.0.0 (ultraplan.md)
+**Archived Version**: v1.0.0 (v1.0.0-original.md)
+**Detailed Comparison**: [ULTRAPLAN_CHANGELOG.md](ULTRAPLAN_CHANGELOG.md)
 
-### From No Version to v1.0.0
+## How to Install/Upgrade
+
+### First-Time Installation
 ```bash
-curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/main/ultraplan.md
+curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/master/ultraplan.md
 ```
 
-Restart Claude Code to load the new command.
+### Upgrading from v1.0.0 to v2.0.0
+```bash
+# Same command - just overwrites the old version
+curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/master/ultraplan.md
+```
+
+**Restart Claude Code** to load the new version.
+
+**No breaking changes for code tasks** - Select "Code Implementation Mode" for v1.0.0-compatible behavior.
 
 ---
 
