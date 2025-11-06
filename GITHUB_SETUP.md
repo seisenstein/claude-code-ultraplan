@@ -55,18 +55,18 @@ git push -u origin main
 
 ## Step 4: Update README with Your Username
 
-The README contains placeholder `[USERNAME]`. Update it:
+The README contains placeholder `seisenstein`. Update it:
 
 ```bash
 cd ~/claude-code-ultraplan
 
-# Replace [USERNAME] with your actual username throughout all files
+# Replace seisenstein with your actual username throughout all files
 sed -i '' 's/\[USERNAME\]/YOUR_GITHUB_USERNAME/g' README.md
 sed -i '' 's/\[USERNAME\]/YOUR_GITHUB_USERNAME/g' INSTALL.md
 sed -i '' 's/\[USERNAME\]/YOUR_GITHUB_USERNAME/g' CONTRIBUTING.md
 sed -i '' 's/\[USERNAME\]/YOUR_GITHUB_USERNAME/g' EXAMPLES.md
 
-# Or manually edit files to replace [USERNAME] with your username
+# Or manually edit files to replace seisenstein with your username
 
 # Commit changes
 git add -A

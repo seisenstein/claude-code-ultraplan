@@ -19,7 +19,7 @@ Download `ultraplan.md` from this repository to the global commands directory:
 
 **Using curl** (preferred):
 ```bash
-curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/[USERNAME]/claude-code-ultraplan/main/ultraplan.md
+curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/main/ultraplan.md
 ```
 
 **Using direct copy** (if repository is cloned locally):
@@ -52,14 +52,14 @@ Example: /ultraplan add user authentication to my web app
 ### Option 1: One-Line Install (Recommended)
 
 ```bash
-curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/[USERNAME]/claude-code-ultraplan/main/ultraplan.md
+curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/main/ultraplan.md
 ```
 
 ### Option 2: Clone and Copy
 
 ```bash
 # Clone the repository
-git clone https://github.com/[USERNAME]/claude-code-ultraplan.git
+git clone https://github.com/seisenstein/claude-code-ultraplan.git
 cd claude-code-ultraplan
 
 # Create commands directory if needed
@@ -74,7 +74,7 @@ ls ~/.claude/commands/ultraplan.md
 
 ### Option 3: Download from GitHub
 
-1. Visit https://github.com/[USERNAME]/claude-code-ultraplan
+1. Visit https://github.com/seisenstein/claude-code-ultraplan
 2. Click on `ultraplan.md`
 3. Click "Raw" button
 4. Save file as `~/.claude/commands/ultraplan.md`
@@ -137,7 +137,7 @@ chmod 755 ~/.claude/commands
 - Use forward slashes in paths when installing via Claude Code
 - PowerShell command:
   ```powershell
-  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/[USERNAME]/claude-code-ultraplan/main/ultraplan.md" -OutFile "$env:USERPROFILE\.claude\commands\ultraplan.md"
+  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/main/ultraplan.md" -OutFile "$env:USERPROFILE\.claude\commands\ultraplan.md"
   ```
 
 ## Uninstallation
@@ -154,7 +154,7 @@ Restart Claude Code for changes to take effect.
 
 ```bash
 # Download latest version (overwrites existing)
-curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/[USERNAME]/claude-code-ultraplan/main/ultraplan.md
+curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/main/ultraplan.md
 
 # Restart Claude Code
 ```
@@ -183,7 +183,7 @@ This repository is public and open source:
 ## Support
 
 If installation issues persist:
-1. Open an issue: https://github.com/[USERNAME]/claude-code-ultraplan/issues
+1. Open an issue: https://github.com/seisenstein/claude-code-ultraplan/issues
 2. Include:
    - Your operating system
    - Claude Code version

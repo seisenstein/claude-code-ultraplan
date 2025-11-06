@@ -391,7 +391,7 @@ Don't skip verification steps. They catch issues early before they compound.
 
 - See [`EXAMPLES.md`](EXAMPLES.md) for real-world scenarios and full output examples
 - See [`CONTRIBUTING.md`](CONTRIBUTING.md) to improve ultraplan
-- Join discussions: [GitHub Discussions](https://github.com/[USERNAME]/claude-code-ultraplan/discussions)
+- Join discussions: [GitHub Discussions](https://github.com/seisenstein/claude-code-ultraplan/discussions)
 
 ---
 

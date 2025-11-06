@@ -36,7 +36,7 @@ Claude Code will:
 mkdir -p ~/.claude/commands
 
 # Download and install
-curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/[USERNAME]/claude-code-ultraplan/main/ultraplan.md
+curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/main/ultraplan.md
 
 # Verify installation
 ls ~/.claude/commands/ultraplan.md
@@ -196,8 +196,8 @@ Last updated: 2025-11-05
 
 ## Support
 
-- Issues: [GitHub Issues](https://github.com/[USERNAME]/claude-code-ultraplan/issues)
-- Discussions: [GitHub Discussions](https://github.com/[USERNAME]/claude-code-ultraplan/discussions)
+- Issues: [GitHub Issues](https://github.com/seisenstein/claude-code-ultraplan/issues)
+- Discussions: [GitHub Discussions](https://github.com/seisenstein/claude-code-ultraplan/discussions)
 - Original concept: LIMITED EDITION JONATHAN
 
 ---

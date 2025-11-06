@@ -63,7 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### From No Version to v1.0.0
 ```bash
-curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/[USERNAME]/claude-code-ultraplan/main/ultraplan.md
+curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/main/ultraplan.md
 ```
 
 Restart Claude Code to load the new command.

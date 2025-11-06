@@ -292,8 +292,8 @@ Significant contributors may be invited to:
 
 ## Questions?
 
-- **General questions**: [GitHub Discussions](https://github.com/[USERNAME]/claude-code-ultraplan/discussions)
-- **Bug reports**: [GitHub Issues](https://github.com/[USERNAME]/claude-code-ultraplan/issues)
+- **General questions**: [GitHub Discussions](https://github.com/seisenstein/claude-code-ultraplan/discussions)
+- **Bug reports**: [GitHub Issues](https://github.com/seisenstein/claude-code-ultraplan/issues)
 - **Security issues**: Email [maintainer email]
 
 ## License
