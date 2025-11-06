@@ -203,6 +203,8 @@ This is a **public repository** but that's safe because:
 - ✅ Users have read-only access
 - ✅ Standard GitHub security protections apply
 
+⚠️ **Important for Contributors**: See [SECURITY.md](SECURITY.md) for security guidelines. **Never commit API keys, tokens, or credentials** when contributing!
+
 ### Open Source Benefits ✅
 
 MIT License means:

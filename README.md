@@ -22,11 +22,23 @@ Ultraplan turns "fix this bug" or "add this feature" into comprehensive, executa
 Give Claude Code this exact instruction:
 
 ```
-Install the ultraplan slash command from this repository to my global Claude Code commands directory (~/.claude/commands/)
+Clone https://github.com/seisenstein/claude-code-ultraplan.git and install the ultraplan slash command to my global Claude Code commands directory (~/.claude/commands/)
+```
+
+Or if you prefer step-by-step:
+
+```bash
+git clone https://github.com/seisenstein/claude-code-ultraplan.git
+cd claude-code-ultraplan
+```
+
+Then tell Claude Code:
+```
+Install the ultraplan.md file from this directory to ~/.claude/commands/ultraplan.md
 ```
 
 Claude Code will:
-1. Read `ultraplan.md` from this repository
+1. Read `ultraplan.md` from the repository
 2. Install it to `~/.claude/commands/ultraplan.md`
 3. Verify installation
 4. You can then use `/ultraplan [task]` in any Claude Code session
@@ -186,6 +198,20 @@ Good contributions:
 - "Documentation structure breaks for [project type], try this instead"
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md) for detailed guidelines.
+
+## Security
+
+This repository is safe to use:
+- No credentials required
+- No API keys needed
+- No external services
+- Pure documentation and prompts
+
+**See [SECURITY.md](SECURITY.md) for**:
+- Security best practices
+- Contributing securely (never commit API keys!)
+- Privacy information
+- Threat model
 
 ## License
 

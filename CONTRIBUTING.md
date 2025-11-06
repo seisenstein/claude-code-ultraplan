@@ -12,6 +12,33 @@ We're building the definitive implementation planning prompt for Claude Code thr
 - Community-driven iteration
 - Battle-tested refinements
 
+## Security Notice
+
+⚠️ **IMPORTANT: Never Include Credentials in Contributions**
+
+When submitting contributions (issues, PRs, examples), ensure you:
+
+- ❌ **Never commit API keys, tokens, or credentials**
+- ❌ **Never include `.env` files or configuration with secrets**
+- ❌ **Never share access tokens in example tool calls**
+- ❌ **Never upload files containing authentication headers**
+- ❌ **Never include private API endpoints or credentials**
+
+**Before submitting**:
+- ✅ Review all files for hardcoded credentials
+- ✅ Use placeholder values (e.g., `YOUR_API_KEY`, `xxx-xxx-xxx`)
+- ✅ Check `.gitignore` includes sensitive files
+- ✅ Redact any private information from screenshots or logs
+- ✅ Use example/mock data instead of production data
+
+**If you accidentally committed credentials**:
+1. Immediately revoke/rotate the exposed credentials
+2. Contact repository maintainers
+3. Force-push to remove from git history (if you have access)
+4. Never assume "deleting the commit" removes the secret from GitHub
+
+---
+
 ## Types of Contributions
 
 ### 1. Bug Reports & Issues
@@ -218,6 +245,9 @@ Tested on:
 - [ ] Documentation updated
 - [ ] No breaking changes (or migration guide provided)
 - [ ] Commit messages are clear
+- [ ] **No API keys, tokens, or credentials in any files**
+- [ ] **No `.env` files or configuration with secrets**
+- [ ] **All sensitive data redacted from examples/logs**
 ```
 
 ## Code Review Process

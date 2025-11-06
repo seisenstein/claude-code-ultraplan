@@ -173,12 +173,23 @@ curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisen
 
 ## Security Considerations
 
-This repository is public and open source:
+This repository is public and safe to install:
 - ✅ No secrets or credentials required
 - ✅ No API keys needed
 - ✅ No GitHub authentication required
 - ✅ Read-only access to public repository
 - ✅ MIT licensed for free use
+- ✅ Pure documentation/prompts (no executable code)
+
+**The slash command uses only safe, local tools**:
+- File reading (your codebase)
+- Documentation creation (markdown files)
+- Directory listing and searching
+- No network access, no data collection
+
+**See [SECURITY.md](SECURITY.md) for complete security information.**
+
+⚠️ **For Contributors**: Never commit API keys or credentials to this repository. See [CONTRIBUTING.md](CONTRIBUTING.md) for security guidelines.
 
 ## Support
 
