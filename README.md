@@ -695,22 +695,9 @@ The slash command uses only safe, local tools:
 
 ## Version
 
-**v2.0.2** - Documentation consolidation (Current)
+**Current Version: v2.0.2** - Documentation consolidation
 
-**Changes in 2.0.2:**
-- Consolidated all documentation into single README.md
-- Removed redundant files (7 files deleted)
-- Created `archived/` directory for old versions
-- Simplified repository structure for easier maintenance
-
-**Previous versions:**
-- v2.0.1: Documentation fixes (branch references corrected)
-- v2.0.0: Dual-mode universal planning
-- v1.0.0: Original code-only version
-
-See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
-
-Last updated: 2025-11-06
+See [CHANGELOG.md](CHANGELOG.md) for complete version history and release notes.
 
 ---
 
