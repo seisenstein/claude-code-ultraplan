@@ -4,6 +4,8 @@
 
 Transform vague tasks into bulletproof, executable implementation plans. This slash command forces exhaustive investigation before planning, preventing assumptions that lead to failed implementations.
 
+> 🎯 **Part of [Collaborative Prompt Engineering #001](https://limitededitionjonathan.substack.com/p/collaborative-prompt-engineering)** by [LIMITED EDITION JONATHAN](https://limitededitionjonathan.substack.com/) - A community initiative to build and refine the definitive implementation planning prompt for Claude Code.
+
 ## What This Does
 
 Ultraplan turns "fix this bug" or "add this feature" into comprehensive, executable plans through:
@@ -163,11 +165,11 @@ See [`EXAMPLES.md`](EXAMPLES.md) for real-world scenarios and outputs.
 
 ## Origin & Community
 
-Created as part of **LIMITED EDITION JONATHAN's Collaborative Prompt Engineering #001** initiative.
+Created as part of **[LIMITED EDITION JONATHAN](https://limitededitionjonathan.substack.com/)'s [Collaborative Prompt Engineering #001](https://limitededitionjonathan.substack.com/p/collaborative-prompt-engineering)** initiative.
 
 This is v1.0 of what aims to become a community-refined, battle-tested planning prompt for Claude Code. Contributions welcome to improve the methodology.
 
-Read the original blog post: [Collaborative Prompt Engineering #001](https://limitededitionjonathan.com/collaborative-prompt-engineering-001)
+Read the original concept and initiative: **[Collaborative Prompt Engineering #001 by LIMITED EDITION JONATHAN](https://limitededitionjonathan.substack.com/p/collaborative-prompt-engineering)**
 
 ## Contributing
 
@@ -196,10 +198,12 @@ Last updated: 2025-11-05
 
 ## Support
 
-- Issues: [GitHub Issues](https://github.com/seisenstein/claude-code-ultraplan/issues)
-- Discussions: [GitHub Discussions](https://github.com/seisenstein/claude-code-ultraplan/discussions)
-- Original concept: LIMITED EDITION JONATHAN
+- **Issues**: [GitHub Issues](https://github.com/seisenstein/claude-code-ultraplan/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/seisenstein/claude-code-ultraplan/discussions)
+- **Original Concept**: [LIMITED EDITION JONATHAN](https://limitededitionjonathan.substack.com/) - [Read the Initiative](https://limitededitionjonathan.substack.com/p/collaborative-prompt-engineering)
 
 ---
 
 **Made for the Claude Code community** 🤖
+
+*Original concept and initiative by [LIMITED EDITION JONATHAN](https://limitededitionjonathan.substack.com/) - [Subscribe to his Substack](https://limitededitionjonathan.substack.com/) for more prompt engineering insights.*
