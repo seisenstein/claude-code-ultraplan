@@ -5,7 +5,42 @@ All notable changes to the Claude Code Ultraplan project will be documented in t
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-> 📖 **See [ULTRAPLAN_CHANGELOG.md](ULTRAPLAN_CHANGELOG.md) for comprehensive version comparison and upgrade guide.**
+## [Unreleased]
+
+### Future Enhancements Under Consideration
+- Automatic complexity detection improvements based on file count
+- Integration with other Claude Code tools and workflows
+- Templates for common task patterns
+- Metrics dashboard for tracking planning efficiency
+- Community-contributed prompt improvements
+- Multi-language support for documentation
+
+## [2.0.2] - 2025-11-06
+
+### Changed
+- **Major documentation restructure**: Consolidated all documentation into single README.md
+- Merged INSTALL.md, ONE_TIME_USE.md, USAGE.md, and EXAMPLES.md into comprehensive README
+- Deleted 7 redundant documentation files (START_HERE.md, GITHUB_SETUP.md, SECURITY.md, ULTRAPLAN_CHANGELOG.md, INSTALL.md, ONE_TIME_USE.md, USAGE.md, EXAMPLES.md)
+- Created `archived/` directory for old version files
+- Moved v1.0.0-original.md and v2.0.0-slashcommand.md to `archived/`
+
+### Fixed
+- Eliminated documentation redundancy and maintenance burden
+- Established single source of truth for all user documentation
+- Simplified repository structure from 14 files to 6 core files
+
+### Improved
+- Much easier to maintain - one change, one file update
+- Better user experience - all info in one place
+- Reduced confusion from conflicting information across multiple files
+
+**Impact**: Patch release - no functional changes to ultraplan.md, only repository structure and documentation organization improvements
+
+## [2.0.1] - 2025-11-06
+
+### Fixed
+- Corrected all branch references in INSTALL.md from '/main/' to '/master/' (4 instances)
+- Reformatted "Automated Installation" section in INSTALL.md as a single, clear prompt for users to copy and paste to Claude Code, eliminating ambiguity about execution responsibility
 
 ## [2.0.0] - 2025-11-05
 
@@ -68,28 +103,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Based on production testing across code implementation projects
 - Foundation for v2.0.0 universal planning expansion
 
-## [Unreleased]
-
-### Future Enhancements Under Consideration
-- Automatic complexity detection improvements based on file count
-- Integration with other Claude Code tools and workflows
-- Templates for common task patterns
-- Metrics dashboard for tracking planning efficiency
-- Community-contributed prompt improvements
-- Multi-language support for documentation
-
 ---
 
 ## Version History
 
 | Version | Date | Description | Status |
 |---------|------|-------------|--------|
-| **v2.0.0** | 2025-11-05 | Dual-mode universal planning (current) | ✅ Active |
+| **v2.0.2** | 2025-11-06 | Documentation consolidation (current) | ✅ Active |
+| v2.0.1 | 2025-11-06 | Documentation fixes | 📦 Previous |
+| v2.0.0 | 2025-11-05 | Dual-mode universal planning | 📦 Previous |
 | v1.0.0 | 2025-11-05 | Original code-only version | 📦 Archived |
 
-**Current Version**: v2.0.0 (ultraplan.md)
-**Archived Version**: v1.0.0 (v1.0.0-original.md)
-**Detailed Comparison**: [ULTRAPLAN_CHANGELOG.md](ULTRAPLAN_CHANGELOG.md)
+**Current Version**: v2.0.2 (ultraplan.md)
+**Archived Versions**: v1.0.0, v2.0.0 (see `archived/` directory)
 
 ## How to Install/Upgrade
 
