@@ -17,7 +17,48 @@ Ultraplan turns "fix this bug" or "add this feature" into comprehensive, executa
 
 ## Quick Start
 
-### For Claude Code (Self-Installation)
+### Choose Your Use Case
+
+**🔹 Option 1: Try It Once** (No installation)
+- Perfect for: Testing, one-off tasks, seeing how it works first
+- Takes: 2 minutes to start
+- **[→ One-Time Use Guide](ONE_TIME_USE.md)**
+
+**🔹 Option 2: Install as Slash Command** (Permanent)
+- Perfect for: Regular use, want `/ultraplan` in all sessions, committed workflow
+- Takes: 3 minutes to install
+- **[→ Installation Guide](INSTALL.md)**
+
+---
+
+### Option 1: Try It Once (No Installation)
+
+Clone and use immediately without installing:
+
+```bash
+git clone https://github.com/seisenstein/claude-code-ultraplan.git
+cd claude-code-ultraplan
+```
+
+Then tell Claude Code:
+```
+Read ultraplan.md and apply its planning protocol to this task: [your task description]
+```
+
+**Example**:
+```
+Read ultraplan.md and apply its planning protocol to this task: add OAuth authentication to my Express app
+```
+
+Claude Code will read the prompt and generate a complete implementation plan.
+
+**[→ Complete One-Time Use Guide](ONE_TIME_USE.md)**
+
+---
+
+### Option 2: Install Permanently
+
+#### For Claude Code (Self-Installation)
 
 Give Claude Code this exact instruction:
 
@@ -25,7 +66,7 @@ Give Claude Code this exact instruction:
 Clone https://github.com/seisenstein/claude-code-ultraplan.git and install the ultraplan slash command to my global Claude Code commands directory (~/.claude/commands/)
 ```
 
-Or if you prefer step-by-step:
+Or step-by-step:
 
 ```bash
 git clone https://github.com/seisenstein/claude-code-ultraplan.git
@@ -37,33 +78,29 @@ Then tell Claude Code:
 Install the ultraplan.md file from this directory to ~/.claude/commands/ultraplan.md
 ```
 
-Claude Code will:
-1. Read `ultraplan.md` from the repository
-2. Install it to `~/.claude/commands/ultraplan.md`
-3. Verify installation
-4. You can then use `/ultraplan [task]` in any Claude Code session
-
-### Manual Installation
+#### Manual Installation
 
 ```bash
 # Create commands directory if needed
 mkdir -p ~/.claude/commands
 
 # Download and install
-curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/main/ultraplan.md
+curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/master/ultraplan.md
 
 # Verify installation
 ls ~/.claude/commands/ultraplan.md
 ```
 
-### Verify It Works
+#### Verify It Works
 
-In any Claude Code session:
+Restart Claude Code, then in any session:
 ```
 /ultraplan create a new authentication system
 ```
 
 Claude Code will ask you to select a mode (Code Implementation or General Task Planning) and begin the planning process.
+
+**[→ Complete Installation Guide](INSTALL.md)**
 
 ## How It Works
 

@@ -1,5 +1,11 @@
 # Installation Instructions for Claude Code
 
+**Permanent installation** - Adds `/ultraplan` to all Claude Code sessions.
+
+> **Just trying it out?** See [ONE_TIME_USE.md](ONE_TIME_USE.md) to use ultraplan once without installation.
+
+---
+
 This document contains detailed installation instructions optimized for Claude Code's self-installation capabilities.
 
 ## For Claude Code (Automated Installation)

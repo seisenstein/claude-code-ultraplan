@@ -2,6 +2,17 @@
 
 Welcome! Your Claude Code Ultraplan repository is complete and ready to be shared with the community.
 
+## 📖 For Users: Two Ways to Use Ultraplan
+
+**New to ultraplan?** Choose your approach:
+
+1. **[Try It Once](ONE_TIME_USE.md)** - No installation, test on a single task
+2. **[Install Permanently](INSTALL.md)** - Adds `/ultraplan` to all Claude Code sessions
+
+**See [README.md](README.md) for quick start with both options.**
+
+---
+
 ## 📦 What You Have
 
 A fully-configured, self-installing GitHub repository for the **Universal Implementation Plan Generator** slash command for Claude Code.
