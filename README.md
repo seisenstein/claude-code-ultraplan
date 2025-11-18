@@ -71,6 +71,28 @@ Claude Code will read the prompt and generate a complete implementation plan.
 
 ---
 
+## ⚠️ URGENT: v2.0.x Users Must Upgrade
+
+**If you're using v2.0.0, v2.0.1, or v2.0.2, upgrade immediately to v2.1.0.**
+
+**Critical Bug Fixed**: Previous versions had `AskUserQuestion` in allowed-tools but never instructed Claude to use it. This meant the "zero-assumption planning" protocol couldn't actually resolve ambiguities interactively - defeating the core purpose of the tool.
+
+**What's Fixed in v2.1.0**:
+- ✅ Mode selection now uses AskUserQuestion tool
+- ✅ New Question-Based Clarification step resolves ambiguities during planning
+- ✅ Comprehensive examples showing proper question-asking workflow
+- ✅ Success criteria updated to include interactive clarification
+- ✅ "Open Questions" section clarified to prevent executor blockers
+
+**Upgrade Now**:
+```bash
+curl -o ~/.claude/commands/ultraplan.md https://raw.githubusercontent.com/seisenstein/claude-code-ultraplan/master/ultraplan.md
+```
+
+Then restart Claude Code to load v2.1.0.
+
+---
+
 ## Installation
 
 ### For Claude Code (Self-Installation)

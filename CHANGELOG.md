@@ -15,6 +15,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Community-contributed prompt improvements
 - Multi-language support for documentation
 
+## [2.1.0] - 2025-11-18
+
+### Added
+- **Interactive question-asking during planning** - AskUserQuestion tool now properly implemented throughout protocol
+- Mode selection now uses AskUserQuestion for Code Implementation vs General Task Planning choice
+- New "Question-Based Clarification" section (Step 4 of Investigation Phase) with:
+  - 5 question trigger conditions (multiple valid paths, scope ambiguity, technical trade-offs, missing context, conflicting requirements)
+  - 3 question patterns (single-choice decisions, multi-select features, scale/scope clarification)
+  - Post-answer investigation workflow
+  - Clear boundaries (when to ask vs when to investigate further)
+- Updated success criteria to explicitly include AskUserQuestion tool as valid ambiguity resolution
+- Enhanced "Open Questions" section with valid vs invalid examples
+- Comprehensive payment processing example demonstrating proper investigate→ask→investigate→plan flow
+
+### Fixed
+- **CRITICAL BUG**: v2.0.0-v2.0.2 had AskUserQuestion in allowed-tools but never instructed Claude to USE the tool
+- Zero-assumption planning now actually achieves zero assumptions through interactive clarification
+- Eliminated executor blockers caused by unanswered critical decisions in "Open Questions"
+
+### Changed
+- Success criteria now reads: "No assumptions made - all ambiguities resolved through investigation or AskUserQuestion tool"
+- Open Questions section now emphatic: "If you're tempted to leave a question here, you probably should have used AskUserQuestion tool instead"
+- Investigation phase now 4 steps instead of 3 (added Question-Based Clarification)
+
+**Upgrade Priority**: URGENT for v2.0.x users - this fixes the core functionality of the planning protocol
+
 ## [2.0.2] - 2025-11-06
 
 ### Changed
@@ -109,12 +135,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Description | Status |
 |---------|------|-------------|--------|
-| **v2.0.2** | 2025-11-06 | Documentation consolidation (current) | ✅ Active |
+| **v2.1.0** | 2025-11-18 | Interactive question-asking (current) | ✅ Active |
+| v2.0.2 | 2025-11-06 | Documentation consolidation | 📦 Previous |
 | v2.0.1 | 2025-11-06 | Documentation fixes | 📦 Previous |
 | v2.0.0 | 2025-11-05 | Dual-mode universal planning | 📦 Previous |
 | v1.0.0 | 2025-11-05 | Original code-only version | 📦 Archived |
 
-**Current Version**: v2.0.2 (ultraplan.md)
+**Current Version**: v2.1.0 (ultraplan.md)
 **Archived Versions**: v1.0.0, v2.0.0 (see `archived/` directory)
 
 ## How to Install/Upgrade
